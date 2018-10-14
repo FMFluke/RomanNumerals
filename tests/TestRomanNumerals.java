@@ -282,4 +282,96 @@ public class TestRomanNumerals {
 		int res = converter.convertToInteger("IVXMM");
 		
 	}
+	
+	@Test (expected = RomanNumeralsInvalidFormatException.class)
+	public void convertToInteger_XM_invalid() throws RomanNumeralsInvalidFormatException {
+		//Arrange
+		RomanNumerals converter = new RomanNumerals();
+		//Act
+		int res = converter.convertToInteger("XM");
+		
+	}
+	
+	@Test (expected = RomanNumeralsInvalidFormatException.class)
+	public void convertToInteger_XD_invalid() throws RomanNumeralsInvalidFormatException {
+		//Arrange
+		RomanNumerals converter = new RomanNumerals();
+		//Act
+		int res = converter.convertToInteger("XD");
+		
+	}
+	
+	@Test (expected = RomanNumeralsInvalidFormatException.class)
+	public void convertToInteger_IL_invalid() throws RomanNumeralsInvalidFormatException {
+		//Arrange
+		RomanNumerals converter = new RomanNumerals();
+		//Act
+		int res = converter.convertToInteger("IL");
+		
+	}
+	
+	@Test (expected = RomanNumeralsInvalidFormatException.class)
+	public void convertToInteger_IC_invalid() throws RomanNumeralsInvalidFormatException {
+		//Arrange
+		RomanNumerals converter = new RomanNumerals();
+		//Act
+		int res = converter.convertToInteger("IC");
+		
+	}
+	
+	@Test (expected = RomanNumeralsInvalidFormatException.class)
+	public void convertToInteger_ID_invalid() throws RomanNumeralsInvalidFormatException {
+		//Arrange
+		RomanNumerals converter = new RomanNumerals();
+		//Act
+		int res = converter.convertToInteger("ID");
+		
+	}
+	
+	@Test (expected = RomanNumeralsInvalidFormatException.class)
+	public void convertToInteger_IM_invalid() throws RomanNumeralsInvalidFormatException {
+		//Arrange
+		RomanNumerals converter = new RomanNumerals();
+		//Act
+		int res = converter.convertToInteger("IM");
+		
+	}
+	
+	@Test
+	public void convertToInteger_MCMXCVI_1996() throws RomanNumeralsInvalidFormatException {
+		//Arrange
+		RomanNumerals converter = new RomanNumerals();
+		//Act
+		int res = converter.convertToInteger("MCMXCVI");
+		//Assert
+		assertEquals(1996, res);
+	}
+	
+	@Test
+	public void convertToInteger_MMMDXLIII_3543() throws RomanNumeralsInvalidFormatException {
+		//Arrange
+		RomanNumerals converter = new RomanNumerals();
+		//Act
+		int res = converter.convertToInteger("MMMDXLIII");
+		//Assert
+		assertEquals(3543, res);
+	}
+	
+	@Test (expected = RomanNumeralsInvalidFormatException.class)
+	public void convertToInteger_FF_invalid() throws RomanNumeralsInvalidFormatException {
+		//Arrange
+		RomanNumerals converter = new RomanNumerals();
+		//Act
+		int res = converter.convertToInteger("FF");
+		
+	}
+	
+	@Test (expected = RomanNumeralsInvalidFormatException.class)
+	public void convertToInteger_MMMSXLIII_invalid() throws RomanNumeralsInvalidFormatException {
+		//Arrange
+		RomanNumerals converter = new RomanNumerals();
+		//Act
+		int res = converter.convertToInteger("MMMSXLIII");
+		
+	}
 }
